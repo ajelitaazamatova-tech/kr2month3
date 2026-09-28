@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Беспроводные наушники",
+    "price": 4990,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Игровая клавиатура",
+    "price": 3200,
+    "inStock": false
+  },
+  {
+    "id": 3,
+    "name": "Смарт-часы",
+    "price": 8900,
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "name": "Коврики для мыши",
+    "price": 600,
+    "inStock": false
+  },
+  {
+    "id": 5,
+    "name": "Беспроводная мышь",
+    "price": 1800,
+    "inStock": true
+  }
+]

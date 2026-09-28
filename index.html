@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>kr2</title>
+</head>
+<body>
+<div id="btn-container">
+    <button>red</button>
+    <button>green</button>
+    <button>blue</button>
+    <button>yellow</button>
+    <button>purple</button>
+</div>
+
+
+<button id="toggle-btn">открыть меню</button>
+<ul id="menu" class="menu">
+    <li>Главная</li>
+    <li>О нас</li>
+    <li>Услуги</li>
+    <li>Контакты</li>
+</ul>
+
+<div id="counter">0</div>
+
+
+<h2 class="tovar">Товары в наличии (products.json)</h2>
+<div id="products-container" class="cards-grid"></div>
+
+<h2 class="poisk-heading">поиск товаров FakeStore API</h2>
+    <div class="controls">
+        <button id="load-btn">Загрузить</button>
+        <input type="text" id="search-input" placeholder="Поиск по названию...">
+    </div>
+    <div id="fakestore-container" class="cards-grid"></div>
+
+</body>
+<script src="main.js"></script>
+</html>
