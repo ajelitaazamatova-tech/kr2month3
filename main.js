@@ -99,12 +99,10 @@ const fakestoreContainer = document.getElementById('fakestore-container');
 // Функция отображения карточек товаров
 function renderProducts(products) {
     fakestoreContainer.innerHTML = '';
-
     if (products.length === 0) {
         fakestoreContainer.innerHTML = '<p>Товары не найдены</p>';
         return;
     }
-
     products.forEach(product => {
         const card = document.createElement('div');
         card.className = 'product-card';
@@ -122,7 +120,7 @@ loadBtn.addEventListener('click', async () => {
     try {
         loadBtn.disabled = true;
         loadBtn.textContent = 'Загрузка...';
-        const response = await fetch('https://fakestoreapi.com/products');
+        const response = await fetch('https://corsproxy.io/?https://fakestoreapi.com/products');
         if (!response.ok) throw new Error(`Ошибка HTTP: ${response.status}`);
         allProducts = await response.json();
         renderProducts(allProducts);
